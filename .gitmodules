@@ -1,0 +1,3 @@
+[submodule "wwdtm-theme"]
+	path = wwdtm-theme
+	url = https://codeberg.org/qlp/wwdtm-theme
