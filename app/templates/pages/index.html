@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="static-page">
+    <h2 id="welcome">Welcome!</h2>
+    <p>
+        Welcome to the gallery of <a href="https://waitwait.npr.org/">Wait Wait... Don't Tell Me!</a>
+        playing cards that have been scanned and cataloged.
+    </p>
+
+    <p>
+        The gallery contains {% if available_card_packs | count > 1 %}{{ available_card_packs | count }} packs{% else %}one pack{% endif %}
+        of playing cards that were distributed either gifts through public
+        radio station donation drives or as prizes for winning listener
+        contestants before the prize was Carl Kasell recording an outgoing
+        voicemail message.
+    </p>
+
+    <div class="info">
+        <ul class="list-group pack-list">
+            {% for pack in available_card_packs %}
+            <li class="list-group-item">
+                <a href="{{ url_for('main.view_pack', card_pack_number=pack) }}">
+                    <i class="bi bi-star" aria-hidden="true"></i>Pack {{ pack }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

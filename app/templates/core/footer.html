@@ -1,0 +1,78 @@
+<footer class="mt-auto pt-3">
+    <div class="footer mt-auto py-3 px-1 links">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-end">
+                    <ul>
+                        {% if settings.api_url %}
+                        <li><a href="{{ settings.api_url }}" target="_blank">API</a></li>
+                        {% endif %}
+                        {% if settings.blog_url %}
+                        <li><a href="{{ settings.blog_url }}" target="_blank">Blog</a></li>
+                        {% endif %}
+                        {% if settings.graphs_url %}
+                        <li><a href="{{ settings.graphs_url }}" target="_blank">Graphs</a></li>
+                        {% endif %}
+                        {% if settings.reports_url %}
+                        <li><a href="{{ settings.reports_url }}" target="_blank">Reports</a></li>
+                        {% endif %}
+                        {% if settings.stats_url %}
+                        <li><a href="{{ settings.stats_url }}" target="_blank">Stats</a></li>
+                        {% endif %}
+                        {% if settings.support_npr_url %}
+                        <li><a href="{{ settings.support_npr_url }}" target="_blank">Support NPR</a></li>
+                        {% endif %}
+                        {% if settings.repo_url %}
+                        <li><a href="{{ settings.repo_url }}" target="_blank">Source Code</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-auto py-3 px-1 copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 copyright-text py-1">
+                    Copyright &copy; 2026
+                    {% if settings.mastodon_url and settings.mastodon_user and settings.bluesky_url and settings.bluesky_user %}
+                    <a href="https://linhpham.org/" target="_blank">Linh Pham</a>
+                    (<span title="Mastodon">M: <a rel="me" href="{{ settings.mastodon_url }}" target="_blank">{{ settings.mastodon_user }}</a></span> | <span title="Bluesky">B: <a href="{{ settings.bluesky_url }}" target="_blank">{{ settings.bluesky_user }}</a></span>).
+                    {% elif settings.mastodon_url and settings.mastodon_user %}
+                    <a href="https://linhpham.org/" target="_blank">Linh Pham</a>
+                    (<span title="Mastodon">M: <a rel="me" href="{{ settings.mastodon_url }}" target="_blank">{{ settings.mastodon_user }}</a></span>).
+                    {% elif settings.bluesky_url and settings.bluesky_user %}
+                    <a href="https://linhpham.org/" target="_blank">Linh Pham</a>
+                    (<span title="Bluesky">B: <a rel="me" href="{{ settings.bluesky_url }}" target="_blank">{{ settings.bluesky_user }}</a></span>).
+                    {% else %}
+                    <a href="https://linhpham.org/" target="_blank">Linh Pham</a>.
+                    {% endif %}
+                    All rights reserved.
+                    <span class="disclaimer ps-1">
+                        <a href="#collapseDisclaimer" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseDisclaimer">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                            <span class="visually-hidden">Toggle disclaimer</span>
+                        </a>
+                    </span>
+                    <br>
+                    Scanned card images distributed a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+                    <div class="collapse" id="collapseDisclaimer">
+                        <div class="col disclaimer">
+                            <div class="mt-2 mb-1 ps-2 border-start">
+                                <b>Disclaimer:</b> I am not an employee of or associated with NPR, Chicago
+                                Public Radio (WBEZ), or Urgent Haircut Productions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-lg-end app-details py-1">
+                    <span id="app-version">
+                        <span title="Page Rendered {%- if node_name %}: {{ node_name }}{% endif %}">R: {{ rendered_at(settings.time_zone) }}</span> |
+                        <span title="Application Version">V: {{ app_version }}</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

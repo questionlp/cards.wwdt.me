@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <title>{% block title %}{% endblock %} | Wait Wait Don't Tell Me! Playing Cards Gallery</title>
+    {% include "core/head.html" with context %}
+    {% block canonical_link %}{% endblock %}
+    {% include "core/init_js.html" %}
+</head>
+<body class="d-flex flex-column h-100">
+{% include "core/nav.html" %}
+
+<main id="main-content">
+    <div class="container-fluid p-3">
+    {% block content %}{% endblock %}
+    </div>
+</main>
+
+{% include "core/footer.html" %}
+</body>
+
+</html>

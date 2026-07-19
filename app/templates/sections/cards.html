@@ -1,0 +1,103 @@
+<div class="p-1 p-md-3">
+    <ul class="nav nav-tabs">
+    {% for card_suit in card_suits %}
+        <li class="nav-item" role="presentation">
+            {% if card_suit == settings.default_active_suit %}
+            <button class="nav-link active" id="tab-pack-{{ pack_number }}-{{ card_suit }}"
+            data-bs-toggle="tab" data-bs-target="#pack-{{ pack_number }}-{{ card_suit }}-pane" type="button"
+            role="tab" aria-controls="#pack-{{ pack_number }}-{{ card_suit }}-pane" aria-current="true">
+                <h3 class="fs-6">{{ card_suits[card_suit].symbol }} {{ card_suits[card_suit].name }}</h3>
+            </button>
+            {% else %}
+            <button class="nav-link" id="tab-pack-{{ pack_number }}-{{ card_suit }}"
+            data-bs-toggle="tab" data-bs-target="#pack-{{ pack_number }}-{{ card_suit }}-pane" type="button"
+            role="tab" aria-controls="#pack-{{pack_number }}-{{ card_suit }}-pane">
+                <h3 class="fs-6">{{ card_suits[card_suit].symbol }} {{ card_suits[card_suit].name }}</h3>
+            </button>
+            {% endif%}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="tab-content" id="pack-{{ pack_number }}-cards">
+    {% for card_suit in card_suits %}
+        <div class="tab-pane{% if card_suit == settings.default_active_suit %} active{% endif%}" id="pack-{{ pack_number }}-{{ card_suit }}-pane" role="tabpanel"
+        aria-labelledby="tab-pack-{{ pack_number }}-{{ card_suit }}" tabindex="0">
+            <div class="card">
+                <div class="card-body m-1">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
+                    {% for card in card_set[card_suit] %}
+                        {% set thumbnail_path = "images/cards/pack-" + pack_number | string + "/small/" + card.image + ".jpg" %}
+                        {% set image_path = "images/cards/pack-" + pack_number | string + "/large/" + card.image + ".jpg" %}
+                        <div class="col">
+                            <div class="card h-100">
+                            {% if card_suit == "jokers" %}
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col fw-bold fs-6">
+                                        <span title="{{ card.color }}">{{ card_colors[card.color | lower].symbol }}</span>
+                                        <span title="Joker">{{ card_suits["jokers"].symbol }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="{{ url_for('static', filename=image_path)}}" target="_blank">
+                                    <img src="{{ url_for('static', filename=thumbnail_path)}}"
+                                    class="card-img-top" alt="{{ card.color }} Joker card with {{ card.name }}">
+                                </a>
+                                <div class="card-body">
+                                    <h4 class="card-title fs-5">{{ card.name }}</h4>
+                                    <p class="card-text">{{ card.description | safe }}</p>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <div>{{ card_colors[card.color | lower].name }} Joker</div>
+                                </div>
+                            {% elif card_suit == "card_backs" %}
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col fw-bold fs-6">
+                                        <span title="{{ card_suits[card_suit].name }}">{{ card_suits[card_suit].symbol }}</span><span title="{{ card_suits[card.suit].name }}">{{ card_suits[card.suit].symbol }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="{{ url_for('static', filename=image_path)}}" target="_blank">
+                                    <img src="{{ url_for('static', filename=thumbnail_path)}}"
+                                    class="card-img-top" alt="Sample card back of a {{ card_suits[card.suit].name }} card suit">
+                                </a>
+                                <div class="card-body">
+                                    <h3 class="card-title fs-5">{{ card.name }}</h4>
+                                    <p class="card-text">{{ card.description | safe }}</p>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <div>{{ card_suits[card.suit].name }} Card Back</div>
+                                </div>
+                            {% else %}
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col fw-bold fs-6">
+                                        {{ card_names[card.card].display }}{{ card_suits[card_suit].symbol }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="{{ url_for('static', filename=image_path)}}" target="_blank">
+                                    <img src="{{ url_for('static', filename=thumbnail_path)}}"
+                                    class="card-img-top" alt="{{ card_names[card.card].name }} with {{ card_suits[card_suit].name }} card for {{ card.name }}">
+                                </a>
+                                <div class="card-body">
+                                    <h4 class="card-title fs-5">{{ card.name }}</h4>
+                                    <p class="card-text">{{ card.description | safe }}</p>
+                                </div>
+                                <div class="card-footer text-end">
+                                    {{ card_names[card.card].name }} of {{ card_suits[card_suit].name }}
+                                </div>
+                            {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
