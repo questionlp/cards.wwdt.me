@@ -19,6 +19,7 @@ class UmamiAnalytics:
     data_website_id: str | None = field(default=None)
     data_domains: str | None = field(default=None)
     data_auto_track: bool | None = field(default=None)
+    data_host_url: str | None = field(default=None)
 
 
 @dataclass
