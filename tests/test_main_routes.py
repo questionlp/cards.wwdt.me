@@ -23,6 +23,8 @@ def test_about(client: FlaskClient) -> None:
     response: TestResponse = client.get("/about")
     assert response.status_code == 200
     assert "Playing Cards Gallery" in response.text
+    assert "About" in response.text
+    assert "Scanning Process" in response.text
 
 
 @pytest.mark.parametrize("card_pack_number", [1, 2])
