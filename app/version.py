@@ -5,4 +5,4 @@
 # vim: set noai syntax=python ts=4 sw=4:
 """Application Version."""
 
-APP_VERSION = "0.9.0-alpha"
+APP_VERSION = "1.0.0"
