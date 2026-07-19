@@ -1,15 +1,17 @@
-{% if settings.umami.enabled %}
-    {% if settings.umami.url and settings.umami.website_id %}
+{% if settings.umami_analytics.enabled %}
+    {% if settings.umami_analytics.url and settings.umami_analytics.data_website_id %}
     <!-- Umami Analytics -->
-        {% set auto_track = "true" if settings.umami.auto_track else "false" %}
-        {% set domains = settings.umami.domains if settings.umami.domains else None %}
-        {% set host_url = settings.umami.host_url if settings.umami.host_url else None %}
+        {% set auto_track = "true" if settings.umami_analytics.data_auto_track else "false" %}
+        {% set website_url = settings.umami_analytics.url %}
+        {% set website_id = settings.umami_analytics.data_website_id %}
+        {% set domains = settings.umami_analytics.data_domains if settings.umami_analytics.data_domains else None %}
+        {% set host_url = settings.umami_analytics.data_host_url if settings.umami_analytics.data_host_url else None %}
         {% if host_url and domains %}
-    <script defer src="{{ settings.umami.url }}" data-website-id="{{ settings.umami.website_id }}" data-auto-track="{{ auto_track }}" data-domains="{{ domains }}" data-host-url="{{ host_url }}"></script>
+    <script defer src="{{ website_url }}" data-website-id="{{ website_id }}" data-auto-track="{{ auto_track }}" data-domains="{{ domains }}" data-host-url="{{ host_url }}"></script>
         {% elif domains %}
-    <script defer src="{{ settings.umami.url }}" data-website-id="{{ settings.umami.website_id }}" data-auto-track="{{ auto_track }}" data-domains="{{ domains }}"></script>
+    <script defer src="{{ website_url }}" data-website-id="{{ website_id }}" data-auto-track="{{ auto_track }}" data-domains="{{ domains }}"></script>
         {% else %}
-    <script defer src="{{ settings.umami.url }}" data-website-id="{{ settings.umami.website_id }}" data-auto-track="{{ auto_track }}"></script>
+    <script defer src="{{ website_url }}" data-website-id="{{ website_id }}" data-auto-track="{{ auto_track }}"></script>
         {% endif %}
     {% endif %}
 {% endif %}
