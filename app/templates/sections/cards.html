@@ -27,8 +27,8 @@
                 <div class="card-body m-1">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">
                     {% for card in card_set[card_suit] %}
-                        {% set thumbnail_path = "images/cards/pack-" + pack_number | string + "/small/" + card.image + ".jpg" %}
-                        {% set image_path = "images/cards/pack-" + pack_number | string + "/large/" + card.image + ".jpg" %}
+                        {% set thumbnail_path = "images/cards/pack-%s/small/%s.jpg" % (pack_number, card.image) %}
+                        {% set image_path = "images/cards/pack-%s/large/%s.jpg" % (pack_number, card.image) %}
                         <div class="col">
                             <div class="card h-100">
                             {% if card_suit == "jokers" %}
