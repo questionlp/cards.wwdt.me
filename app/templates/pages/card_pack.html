@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Pack {{ pack_number }}{% endblock %}
+
+{% block content %}
+<div class="info">
+    <h2 id="welcome">Pack {{ pack_number }}</h2>
+
+    <p>
+        The playing cards are organized into tabs by card suit, along with tabs
+        or Joker cards and a sample collection of card backs. A larger version
+        of the card images are available by clicking on any card.
+    </p>
+
+{% include "sections/cards.html" %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{
+    "api_url": "",
+    "blog_url": "",
+    "graphs_url": "",
+    "reports_url": "",
+    "site_url": "",
+    "time_zone": "",
+    "bluesky_url": "",
+    "bluesky_user": "",
+    "mastodon_url": "",
+    "mastodon_user": "",
+    "repo_url": "https://codeberg.org/qlp/cards.wwdt.me",
+    "support_npr_url": "https://www.npr.org/donations/support",
+    "github_sponsor_url": "",
+    
+    "block_ai_scrapers": true,
+    "use_minified_css": false,
+    "default_active_suit": "clubs",
+
+    "umami_analytics": {
+        "enabled": false,
+        "url": "",
+        "data_website_id": "",
+        "data_domains": "",
+        "data_auto_track": false
+    }
+}

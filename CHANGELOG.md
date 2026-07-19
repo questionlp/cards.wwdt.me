@@ -1,5 +1,5 @@
 # Changes
 
-## 0.9.0-alpha (Initial Release)
+## 1.0.0 (Initial Release)
 
 * Initial release, nothing to see

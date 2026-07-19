@@ -1,0 +1,12 @@
+Sitemap: {{ settings.site_url }}{{ url_for("sitemaps.primary") }}
+
+{% if settings.block_ai_scrapers %}
+Content-Signal: ai-train=no, search=yes, ai-input=no
+{% include "robots.ai.txt" %}
+
+{% else %}
+Content-Signal: search=yes
+{% endif %}
+
+User-agent: *
+Crawl-delay: 30

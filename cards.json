@@ -1,0 +1,728 @@
+[
+    {
+        "card_pack": 1,
+        "clubs": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "clubs-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Jacki Lyden",
+                "description": "NPR® Senior Correspondent/Substitute Host",
+                "image": "clubs-2-jacki-lyden"
+            },
+            {
+                "card": "3",
+                "name": "Anne Garrels",
+                "description": "NPR® Foreign Correspondent",
+                "image": "clubs-3-anne-garrels"
+            },
+            {
+                "card": "4",
+                "name": "David Molpus",
+                "description": "NPR® Workplace Correspondent",
+                "image": "clubs-4-david-molpus"
+            },
+            {
+                "card": "5",
+                "name": "Fiona Ritchie",
+                "description": "<cite>The Thistle & Shamrock</cite>® Host",
+                "image": "clubs-5-fiona-ritchie"
+            },
+            {
+                "card": "6",
+                "name": "Baxter Black",
+                "description": "<cite>Morning Edition</cite>® Commentator, Cowboy, Poet, & Former Large Animal Veterinarian",
+                "image": "clubs-6-baxter-black"
+            },
+            {
+                "card": "7",
+                "name": "Elizabeth Arnold",
+                "description": "NPR® National Correspondent",
+                "image": "clubs-7-elizabeth-arnold"
+            },
+            {
+                "card": "8",
+                "name": "Charlie Pierce",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "clubs-8-charlie-pierce"
+            },
+            {
+                "card": "9",
+                "name": "Jean Cochran",
+                "description": "NPR® Newscaster",
+                "image": "clubs-9-jean-cochran"
+            },
+            {
+                "card": "10",
+                "name": "Juan Williams",
+                "description": "<cite>Talk of the Nation</cite>® Host",
+                "image": "clubs-10-juan-williams"
+            },
+            {
+                "card": "J",
+                "name": "Peter Sagal",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Host",
+                "image": "clubs-jack-peter-sagal"
+            },
+            {
+                "card": "Q",
+                "name": "Nina Totenberg",
+                "description": "NPR® Legal Affairs Correspondent",
+                "image": "clubs-queen-nina-totenberg"
+            },
+            {
+                "card": "K",
+                "name": "Daniel Schorr",
+                "description": "NPR® Senior News Analyst",
+                "image": "clubs-king-daniel-schorr"
+            }
+        ],
+        "diamonds": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "diamonds-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Mara Liasson",
+                "description": "NPR® National Political Correspondent",
+                "image": "diamonds-2-mara-liasson"
+            },
+            {
+                "card": "3",
+                "name": "Julie McCarthy",
+                "description": "NPR® Foreign Correspondent",
+                "image": "diamonds-3-julie-mccarthy"
+            },
+            {
+                "card": "4",
+                "name": "Fred Child",
+                "description": "<cite>Performance Today</cite>® Host",
+                "image": "diamonds-4-fred-child"
+            },
+            {
+                "card": "5",
+                "name": "Patt Morrison",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "diamonds-5-patt-morrison"
+            },
+            {
+                "card": "6",
+                "name": "Korva Coleman",
+                "description": "<cite>Performance Today</cite>® Weekend Host, <cite>SymphonyCast</cite> Host",
+                "image": "diamonds-6-korva-coleman"
+            },
+            {
+                "card": "7",
+                "name": "Margot Adler",
+                "description": "NPR® New York Correspondent",
+                "image": "diamonds-7-margot-adler"
+            },
+            {
+                "card": "8",
+                "name": "Andrei Codrescu",
+                "description": "Poet/<cite>All Things Considered</cite>® Commentator",
+                "image": "diamonds-8-andrei-codrescu"
+            },
+            {
+                "card": "9",
+                "name": "Neal Conan",
+                "description": "NPR® Correspondent/<cite>Weekend Edition</cite>® Host",
+                "image": "diamonds-9-neal-conan"
+            },
+            {
+                "card": "10",
+                "name": "Roy Blount, Jr.",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "diamonds-10-roy-blount-jr"
+            },
+            {
+                "card": "J",
+                "name": "Scott Simon",
+                "description": "<cite>Weekend Edition</cite>® <cite>Saturday</cite> Host",
+                "image": "diamonds-jack-scott-simon"
+            },
+            {
+                "card": "Q",
+                "name": "Cokie Roberts",
+                "description": "NPR® Senior News Analyst",
+                "image": "diamonds-queen-cokie-roberts"
+            },
+            {
+                "card": "K",
+                "name": "Robert Siegel",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "diamonds-king-robert-siegel"
+            }
+        ],
+        "hearts": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "hearts-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Corey Flintoff",
+                "description": "NPR® Newscaster",
+                "image": "hearts-2-corey-flintoff"
+            },
+            {
+                "card": "3",
+                "name": "Bob Mondello",
+                "description": "<cite>All Things Considered</cite>® Arts Reviewer",
+                "image": "hearts-3-bob-mondello"
+            },
+            {
+                "card": "4",
+                "name": "Liane Hansen",
+                "description": "<cite>Weekend Edition</cite>® <cite>Sunday</cite> Host",
+                "image": "hearts-4-liane-hansen"
+            },
+            {
+                "card": "5",
+                "name": "Vertamae Grosvenor",
+                "description": "NPR® Cultural Correspondent",
+                "image": "hearts-5-vertamae-grosvenor"
+            },
+            {
+                "card": "6",
+                "name": "Frank Deford",
+                "description": "<cite>Morning Edition</cite>® Sports Commentator",
+                "image": "hearts-6-frank-deford"
+            },
+            {
+                "card": "7",
+                "name": "Marian McPartland",
+                "description": "<cite>Marian McPartland's Piano Jazz</cite> Host",
+                "image": "hearts-7-marian-mcpartland"
+            },
+            {
+                "card": "8",
+                "name": "Joe Palca",
+                "description": "NPR® Science Correspondent",
+                "image": "hearts-8-joe-palca"
+            },
+            {
+                "card": "9",
+                "name": "Jack Speer",
+                "description": "NPR® Business Correspondent",
+                "image": "hearts-9-jack-speer"
+            },
+            {
+                "card": "10",
+                "name": "Roxanne Roberts",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "hearts-10-roxanne-roberts"
+            },
+            {
+                "card": "J",
+                "name": "Alex Chadwick",
+                "description": "<cite>Morning Edition</cite>® Correspondent",
+                "image": "hearts-jack-alex-chadwick"
+            },
+            {
+                "card": "Q",
+                "name": "Linda Wertheimer",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "hearts-queen-linda-wertheimer"
+            },
+            {
+                "card": "K",
+                "name": "Bob Edwards",
+                "description": "<cite>Morning Edition</cite>® Host",
+                "image": "hearts-king-bob-edwards"
+            }
+        ],
+        "spades": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "spades-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Tom Gjelten",
+                "description": "NPR® Pentagon Correspondent",
+                "image": "spades-2-tom-gjelten"
+            },
+            {
+                "card": "3",
+                "name": "John Ydstie",
+                "description": "NPR® Economics Correspondent",
+                "image": "spades-3-john-ydstie"
+            },
+            {
+                "card": "4",
+                "name": "Peter Overby",
+                "description": "NPR® Power, Money & Influence Correspondent",
+                "image": "spades-4-peter-overby"
+            },
+            {
+                "card": "5",
+                "name": "Lynn Neary",
+                "description": "NPR® Cultural Correspondent",
+                "image": "spades-5-lynn-neary"
+            },
+            {
+                "card": "6",
+                "name": "Sue Ellicott",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "spades-6-sue-ellicott"
+            },
+            {
+                "card": "7",
+                "name": "Lisa Simeone",
+                "description": "<cite>Weekend All Things Considered</cite>® Host",
+                "image": "spades-7-lisa-simeone"
+            },
+            {
+                "card": "8",
+                "name": "Adam Felber",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "spades-8-adam-felber"
+            },
+            {
+                "card": "9",
+                "name": "Ann Taylor",
+                "description": "NPR® Newscaster",
+                "image": "spades-9-ann-taylor"
+            },
+            {
+                "card": "10",
+                "name": "Sylvia Poggioli",
+                "description": "NPR® Senior European Correspondent",
+                "image": "spades-10-sylvia-poggioli"
+            },
+            {
+                "card": "J",
+                "name": "Terry Gross",
+                "description": "<cite>Fresh Air</cite>® Host",
+                "image": "spades-jack-terry-gross"
+            },
+            {
+                "card": "Q",
+                "name": "Susan Stamberg",
+                "description": "NPR® Special Correspondent",
+                "image": "spades-queen-susan-stamberg"
+            },
+            {
+                "card": "K",
+                "name": "Noah Adams",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "spades-king-noah-adams"
+            }
+        ],
+        "jokers": [
+            {
+                "color": "Black",
+                "name": "Tom & Ray Magliozzi",
+                "description": "<cite>Car Talk</cite>® Hosts",
+                "image": "black-joker-tom-ray-magliozzi"
+            },
+            {
+                "color": "Red",
+                "name": "Tom & Ray Magliozzi",
+                "description": "<cite>Car Talk</cite>® Hosts",
+                "image": "red-joker-tom-ray-magliozzi"
+            }
+        ],
+        "card_backs": [
+            {
+                "suit": "clubs",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Clubs suit",
+                "image": "clubs-card-back-1"
+            },
+            {
+                "suit": "diamonds",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Diamonds suit",
+                "image": "diamonds-card-back-1"
+            },
+            {
+                "suit": "hearts",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Hearts suit",
+                "image": "hearts-card-back-1"
+            },
+            {
+                "suit": "spades",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Spades suit",
+                "image": "spades-card-back-1"
+            }
+        ]
+    },
+    {
+        "card_pack": 2,
+        "clubs": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "clubs-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Jacki Lyden",
+                "description": "NPR® Senior Correspondent/Substitute Host",
+                "image": "clubs-2-jacki-lyden"
+            },
+            {
+                "card": "3",
+                "name": "Anne Garrels",
+                "description": "NPR® Foreign Correspondent",
+                "image": "clubs-3-anne-garrels"
+            },
+            {
+                "card": "4",
+                "name": "David Molpus",
+                "description": "NPR® Workplace Correspondent",
+                "image": "clubs-4-david-molpus"
+            },
+            {
+                "card": "5",
+                "name": "Fiona Ritchie",
+                "description": "<cite>The Thistle & Shamrock</cite>® Host",
+                "image": "clubs-5-fiona-ritchie"
+            },
+            {
+                "card": "6",
+                "name": "Baxter Black",
+                "description": "<cite>Morning Edition</cite>® Commentator, Cowboy, Poet, & Former Large Animal Veterinarian",
+                "image": "clubs-6-baxter-black"
+            },
+            {
+                "card": "7",
+                "name": "Elizabeth Arnold",
+                "description": "NPR® National Correspondent",
+                "image": "clubs-7-elizabeth-arnold"
+            },
+            {
+                "card": "8",
+                "name": "Charlie Pierce",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "clubs-8-charlie-pierce"
+            },
+            {
+                "card": "9",
+                "name": "Jean Cochran",
+                "description": "NPR® Newscaster",
+                "image": "clubs-9-jean-cochran"
+            },
+            {
+                "card": "10",
+                "name": "Juan Williams",
+                "description": "NPR® Senior Correspondent",
+                "image": "clubs-10-juan-williams"
+            },
+            {
+                "card": "J",
+                "name": "Peter Sagal",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Host",
+                "image": "clubs-jack-peter-sagal"
+            },
+            {
+                "card": "Q",
+                "name": "Nina Totenberg",
+                "description": "NPR® Legal Affairs Correspondent",
+                "image": "clubs-queen-nina-totenberg"
+            },
+            {
+                "card": "K",
+                "name": "Daniel Schorr",
+                "description": "NPR® Senior News Analyst",
+                "image": "clubs-king-daniel-schorr"
+            }
+        ],
+        "diamonds": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "diamonds-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Mara Liasson",
+                "description": "NPR® National Political Correspondent",
+                "image": "diamonds-2-mara-liasson"
+            },
+            {
+                "card": "3",
+                "name": "Steve Inskeep",
+                "description": "<cite>All Things Considered</cite>® Weekend Host",
+                "image": "diamonds-3-steve-inskeep"
+            },
+            {
+                "card": "4",
+                "name": "Fred Child",
+                "description": "<cite>Performance Today</cite>® Host",
+                "image": "diamonds-4-fred-child"
+            },
+            {
+                "card": "5",
+                "name": "P.J. O'Rouke",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "diamonds-5-p-j-o-rourke"
+            },
+            {
+                "card": "6",
+                "name": "Korva Coleman",
+                "description": "<cite>Performance Today</cite>® Weekend Host, <cite>SymphonyCast</cite> Host",
+                "image": "diamonds-6-korva-coleman"
+            },
+            {
+                "card": "7",
+                "name": "Margot Adler",
+                "description": "NPR® New York Correspondent",
+                "image": "diamonds-7-margot-adler"
+            },
+            {
+                "card": "8",
+                "name": "Michele Norris",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "diamonds-8-michele-norris"
+            },
+            {
+                "card": "9",
+                "name": "Neal Conan",
+                "description": "NPR® Correspondent/<cite>Weekend Edition</cite>® Host",
+                "image": "diamonds-9-neal-conan"
+            },
+            {
+                "card": "10",
+                "name": "Roy Blount, Jr.",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "diamonds-10-roy-blount-jr"
+            },
+            {
+                "card": "J",
+                "name": "Scott Simon",
+                "description": "<cite>Weekend Edition</cite>® <cite>Saturday</cite> Host",
+                "image": "diamonds-jack-scott-simon"
+            },
+            {
+                "card": "Q",
+                "name": "Cokie Roberts",
+                "description": "NPR® Senior News Analyst",
+                "image": "diamonds-queen-cokie-roberts"
+            },
+            {
+                "card": "K",
+                "name": "Robert Siegel",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "diamonds-king-robert-siegel"
+            }
+        ],
+        "hearts": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "hearts-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Corey Flintoff",
+                "description": "NPR® Newscaster",
+                "image": "hearts-2-corey-flintoff"
+            },
+            {
+                "card": "3",
+                "name": "Bob Mondello",
+                "description": "<cite>All Things Considered</cite>® Arts Reviewer",
+                "image": "hearts-3-bob-mondello"
+            },
+            {
+                "card": "4",
+                "name": "Liane Hansen",
+                "description": "<cite>Weekend Edition</cite>® <cite>Sunday</cite> Host",
+                "image": "hearts-4-liane-hansen"
+            },
+            {
+                "card": "5",
+                "name": "Vertamae Grosvenor",
+                "description": "NPR® Cultural Correspondent",
+                "image": "hearts-5-vertamae-grosvenor"
+            },
+            {
+                "card": "6",
+                "name": "Mo Rocca",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "hearts-6-mo-rocca"
+            },
+            {
+                "card": "7",
+                "name": "Marian McPartland",
+                "description": "<cite>Marian McPartland's Piano Jazz</cite> Host",
+                "image": "hearts-7-marian-mcpartland"
+            },
+            {
+                "card": "8",
+                "name": "Joe Palca",
+                "description": "NPR® Science Correspondent",
+                "image": "hearts-8-joe-palca"
+            },
+            {
+                "card": "9",
+                "name": "Melissa Block",
+                "description": "<cite>All Things Considered</cite>® Host",
+                "image": "hearts-9-melissa-block"
+            },
+            {
+                "card": "10",
+                "name": "Roxanne Roberts",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "hearts-10-roxanne-roberts"
+            },
+            {
+                "card": "J",
+                "name": "Alex Chadwick",
+                "description": "<cite>Morning Edition</cite>® Correspondent",
+                "image": "hearts-jack-alex-chadwick"
+            },
+            {
+                "card": "Q",
+                "name": "Linda Wertheimer",
+                "description": "NPR® Senior National Correspondent",
+                "image": "hearts-queen-linda-wertheimer"
+            },
+            {
+                "card": "K",
+                "name": "Bob Edwards",
+                "description": "<cite>Morning Edition</cite>® Host",
+                "image": "hearts-king-bob-edwards"
+            }
+        ],
+        "spades": [
+            {
+                "card": "1",
+                "name": "Carl Kasell",
+                "description": "<cite>Morning Edition</cite>® Newscaster/<cite>Wait Wait...Don't Tell Me!</cite>℠ Official Judge & Scorekeeper",
+                "image": "spades-ace-carl-kasell"
+            },
+            {
+                "card": "2",
+                "name": "Tom Gjelten",
+                "description": "NPR® Pentagon Correspondent",
+                "image": "spades-2-tom-gjelten"
+            },
+            {
+                "card": "3",
+                "name": "John Ydstie",
+                "description": "NPR® Economics Correspondent",
+                "image": "spades-3-john-ydstie"
+            },
+            {
+                "card": "4",
+                "name": "Peter Overby",
+                "description": "NPR® Power, Money & Influence Correspondent",
+                "image": "spades-4-peter-overby"
+            },
+            {
+                "card": "5",
+                "name": "Lynn Neary",
+                "description": "NPR® Cultural Correspondent",
+                "image": "spades-5-lynn-neary"
+            },
+            {
+                "card": "6",
+                "name": "Sue Ellicott",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "spades-6-sue-ellicott"
+            },
+            {
+                "card": "7",
+                "name": "Lisa Simeone",
+                "description": "<cite>Weekend All Things Considered</cite>® Host",
+                "image": "spades-7-lisa-simeone"
+            },
+            {
+                "card": "8",
+                "name": "Adam Felber",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "spades-8-adam-felber"
+            },
+            {
+                "card": "9",
+                "name": "Ann Taylor",
+                "description": "NPR® Newscaster",
+                "image": "spades-9-ann-taylor"
+            },
+            {
+                "card": "10",
+                "name": "Sylvia Poggioli",
+                "description": "NPR® Senior European Correspondent",
+                "image": "spades-10-sylvia-poggioli"
+            },
+            {
+                "card": "J",
+                "name": "Terry Gross",
+                "description": "<cite>Fresh Air</cite>® Host",
+                "image": "spades-jack-terry-gross"
+            },
+            {
+                "card": "Q",
+                "name": "Susan Stamberg",
+                "description": "NPR® Special Correspondent",
+                "image": "spades-queen-susan-stamberg"
+            },
+            {
+                "card": "K",
+                "name": "Paula Poundstone",
+                "description": "<cite>Wait Wait...Don't Tell Me!</cite>℠ Panelist",
+                "image": "spades-king-paula-poundstone"
+            }
+        ],
+        "jokers": [
+            {
+                "color": "Black",
+                "name": "Tom & Ray Magliozzi",
+                "description": "<cite>Car Talk</cite>® Hosts",
+                "image": "black-joker-tom-ray-magliozzi"
+            },
+            {
+                "color": "Red",
+                "name": "Tom & Ray Magliozzi",
+                "description": "<cite>Car Talk</cite>® Hosts",
+                "image": "red-joker-tom-ray-magliozzi"
+            }
+        ],
+        "card_backs": [
+            {
+                "suit": "clubs",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Clubs suit",
+                "image": "clubs-card-back-1"
+            },
+            {
+                "suit": "diamonds",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Diamonds suit",
+                "image": "diamonds-card-back-1"
+            },
+            {
+                "suit": "hearts",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Hearts suit",
+                "image": "hearts-card-back-1"
+            },
+            {
+                "suit": "spades",
+                "name": "Sample Card Back",
+                "description": "Scan of one of the cards from the Spades suit",
+                "image": "spades-card-back-1"
+            }
+        ]
+    }
+]
