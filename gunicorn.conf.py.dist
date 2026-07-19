@@ -14,7 +14,7 @@
 # refer to the Gunicorn documentation site at:
 # https://docs.gunicorn.org/en/stable/settings.html#config-file
 
-bind = "unix:/tmp/gunicorn-wwdtm-card-gallery.sock"
+bind = "unix:/tmp/gunicorn-wwdtmcards.sock"
 workers = 4
 accesslog = "_log/access.log"
 errorlog = "_log/error.log"
