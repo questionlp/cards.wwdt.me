@@ -9,7 +9,7 @@ This document provides instructions on how to serve the application through [Gun
 Clone a copy of this repository to a location of your choosing by running:
 
 ```bash
-git clone https://codeberg.org/qlp/wwdtm-playing-cards-gallery
+git clone https://codeberg.org/qlp/cards.wwdt.me
 ```
 
 Within the new local copy of the repository, create a new virtual environment and install the required packages by running the following commands:
