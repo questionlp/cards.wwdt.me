@@ -26,7 +26,7 @@
                         </li>
                         {% for pack_number in available_card_packs %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('main.view_pack', card_pack_number=pack_number )}}">Pack {{ pack_number }}</a>
+                            <a class="nav-link" href="{{ url_for('main.card_pack', card_pack_number=pack_number )}}">Pack {{ pack_number }}</a>
                         </li>
                         {% endfor %}
                         <li class="nav-item d-block d-xl-none">

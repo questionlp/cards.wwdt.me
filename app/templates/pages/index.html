@@ -21,8 +21,8 @@
         <ul class="list-group pack-list">
             {% for pack in available_card_packs %}
             <li class="list-group-item">
-                <a href="{{ url_for('main.view_pack', card_pack_number=pack) }}">
-                    <i class="bi bi-star" aria-hidden="true"></i>Pack {{ pack }}
+                <a href="{{ url_for('main.card_pack', card_pack_number=pack) }}">
+                    Pack {{ pack }}
                 </a>
             </li>
             {% endfor %}

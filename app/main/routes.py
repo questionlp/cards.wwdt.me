@@ -5,9 +5,18 @@
 # vim: set noai syntax=python ts=4 sw=4:
 """Main Routes."""
 
+from http.client import HTTPException
 from pathlib import Path
 
-from flask import Blueprint, Response, current_app, render_template, send_file, url_for
+from flask import (
+    Blueprint,
+    Response,
+    current_app,
+    render_template,
+    request,
+    send_file,
+    url_for,
+)
 
 from app.utilities import redirect_url
 
@@ -21,7 +30,7 @@ def index() -> str:
 
 
 @blueprint.route("/pack/<int:card_pack_number>")
-def view_pack(card_pack_number: int) -> Response | str:
+def card_pack(card_pack_number: int) -> Response | str:
     """View: Card Pack."""
     if card_pack_number not in current_app.config["available_card_packs"]:
         return redirect_url(url_for("main.index"))
@@ -49,3 +58,16 @@ def robots_txt() -> Response:
         return Response(response, mimetype="text/plain")
 
     return send_file(robots_txt_path, mimetype="text/plain")
+
+
+@blueprint.route("/tempest", methods=["POST"])
+def tempest():
+    """Tempest in a Teapot. Do not consume.
+
+    Route is used purely for testing purposes.
+    """
+    if "Werkzeug" in request.user_agent.string and "418" in request.headers:
+        if "teapot" in request.headers.get("418"):
+            raise HTTPException(status_code=500)
+
+    return redirect_url(url_for("main.index"))

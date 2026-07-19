@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # vim: set noai syntax=python ts=4 sw=4:
+"""Application settings."""
 
 import json
 from dataclasses import dataclass, field

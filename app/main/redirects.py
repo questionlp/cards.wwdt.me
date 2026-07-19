@@ -15,11 +15,20 @@ blueprint = Blueprint("main_redirects", __name__)
 @blueprint.route("/favicon.ico")
 def favicon() -> Response:
     """Redirect: /favicon.ico to /static/favicon.ico."""
-    return redirect_url(url_for("static", filename="favicon.ico"))
+    return redirect_url(url_for("static", filename="favicon.ico"), status_code=301)
 
 
 @blueprint.route("/pack")
 @blueprint.route("/packs")
 def pack_redirect() -> Response:
     """Redirect: /pack and /packs to /."""
+    return redirect_url(url_for("main.index"))
+
+
+@blueprint.route("/tempest", methods=["GET", "HEAD"])
+def tempest():
+    """Tempest in a Teapot. Do not consume.
+
+    Route is used purely for testing purposes.
+    """
     return redirect_url(url_for("main.index"))

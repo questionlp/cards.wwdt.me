@@ -12,26 +12,6 @@ import pytz
 from flask import Response, current_app
 
 
-def current_year(time_zone: str = "UTC") -> str:
-    """Return the current year."""
-    _time_zone = pytz.timezone(time_zone)
-    now = datetime.now(_time_zone)
-    return now.strftime("%Y")
-
-
-def date_string_to_date(**kwargs) -> datetime | None:
-    """Used to convert an ISO-style date string into a datetime object."""
-    if "date_string" in kwargs and kwargs["date_string"]:
-        try:
-            date_object: datetime = datetime.strptime(kwargs["date_string"], "%Y-%m-%d")
-        except ValueError:
-            return None
-
-        return date_object
-
-    return None
-
-
 def generate_date_time_stamp(time_zone: str = "UTC") -> str:
     """Generate a current date/timestamp string."""
     _time_zone = pytz.timezone(time_zone)
@@ -52,19 +32,3 @@ def redirect_url(url: str, status_code: int = 302) -> Response:
     response.headers["Expires"] = 0
     response.headers["Location"] = url
     return response
-
-
-def time_zone_parser(time_zone: str) -> tuple[Any, str | None]:
-    """Parses a time zone name into a pytz.timezone object.
-
-    Returns pytz.timezone object and string if time_zone is valid.
-    Otherwise, returns UTC if time zone is not a valid tz value.
-    """
-    try:
-        time_zone_object = pytz.timezone(time_zone)
-        time_zone_string = time_zone_object.zone
-    except (pytz.UnknownTimeZoneError, AttributeError, ValueError):
-        time_zone_object = pytz.timezone("UTC")
-        time_zone_string: str | None = time_zone_object.zone
-
-    return time_zone_object, time_zone_string
