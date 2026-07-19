@@ -35,8 +35,7 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col fw-bold fs-6">
-                                        <span title="{{ card.color }}">{{ card_colors[card.color | lower].symbol }}</span>
-                                        <span title="Joker">{{ card_suits["jokers"].symbol }}</span>
+                                        <span class="pe-05" title="{{ card.color }}">{{ card_colors[card.color | lower].symbol }}</span><span title="Joker">{{ card_suits["jokers"].symbol }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +54,7 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col fw-bold fs-6">
-                                        <span title="{{ card_suits[card_suit].name }}">{{ card_suits[card_suit].symbol }}</span><span title="{{ card_suits[card.suit].name }}">{{ card_suits[card.suit].symbol }}</span>
+                                        <span class="pe-05" title="{{ card_suits[card_suit].name }}">{{ card_suits[card_suit].symbol }}</span><span title="{{ card_suits[card.suit].name }}">{{ card_suits[card.suit].symbol }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -74,7 +73,7 @@
                                 <div class="card-header">
                                     <div class="row">
                                         <div class="col fw-bold fs-6">
-                                        {{ card_names[card.card].display }}{{ card_suits[card_suit].symbol }}
+                                        <span class="pe-05">{{ card_names[card.card].display }}</span><span title="{{ card_suits[card_suit].name }}">{{ card_suits[card_suit].symbol }}</span>
                                         </div>
                                     </div>
                                 </div>
