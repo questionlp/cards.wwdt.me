@@ -4,7 +4,7 @@
 
 ### Application Changes
 
-- Added links to the original scanned card images uploaded to Flick and the Internat Archive
+* Added links to the original scanned card images uploaded to Flick and the Internat Archive
 
 ## 1.0.2
 
