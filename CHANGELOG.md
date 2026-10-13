@@ -1,5 +1,18 @@
 # Changes
 
+## 1.0.5
+
+### Component Changes
+
+- Upgraded wwdtm-theme from 2.6.4 to 2.6.7
+
+### Development Changes
+
+- Upgraded pydoclint from 0.8.4 to 0.11.0
+- Upgraded pytest from 9.0.3 to 9.1.1
+- Upgraded pytest-cov from 7.0.0 to 7.1.0
+- Upgraded ruff from 0.15.6 to 0.17.0
+
 ## 1.0.4
 
 ### Application Changes
