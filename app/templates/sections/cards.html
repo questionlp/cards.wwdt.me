@@ -60,7 +60,7 @@
                                 </div>
                                 <a href="{{ url_for('static', filename=image_path)}}" target="_blank">
                                     <img src="{{ url_for('static', filename=thumbnail_path)}}"
-                                    class="card-img-top" alt="Sample card back of a {{ card_suits[card.suit].name }} card suit">
+                                    class="card-img-top" alt="Sample card back of a {{ card_suits[card.suit].name }} card suit from pack {{ pack_number }}">
                                 </a>
                                 <div class="card-body">
                                     <h3 class="card-title fs-5">{{ card.name }}</h4>
@@ -79,7 +79,7 @@
                                 </div>
                                 <a href="{{ url_for('static', filename=image_path)}}" target="_blank">
                                     <img src="{{ url_for('static', filename=thumbnail_path)}}"
-                                    class="card-img-top" alt="{{ card_names[card.card].name }} with {{ card_suits[card_suit].name }} card for {{ card.name }}">
+                                    class="card-img-top" alt="{{ card_names[card.card].name }} of {{ card_suits[card_suit].name }} card for {{ card.name }} from pack {{ pack_number }}">
                                 </a>
                                 <div class="card-body">
                                     <h4 class="card-title fs-5">{{ card.name }}</h4>

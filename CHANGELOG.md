@@ -1,5 +1,21 @@
 # Changes
 
+## 1.1.0
+
+### Application Changes
+
+- Updated alt text for card images to include pack number and corrected grammatical errors
+
+### Component Changes
+
+- Upgraded pytz from 2026.2 to 2026.5
+- Upgraded wwdtm-theme from 2.6.7 to 2.6.8
+  - Includes upgrading Bootstrap Icons from 1.13.1 to 1.13.2
+
+### Development Changes
+
+- Increased the minimum pytest version from 8.4 to 9.0 in `pyproject.toml`, which was missed from the previous release
+
 ## 1.0.5
 
 ### Component Changes
