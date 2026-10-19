@@ -9,7 +9,7 @@
 ### Component Changes
 
 - Upgraded pytz from 2026.2 to 2026.5
-- Upgraded wwdtm-theme from 2.6.7 to 2.6.8
+- Upgraded wwdtm-theme from 2.6.7 to 2.6.9
   - Includes upgrading Bootstrap Icons from 1.13.1 to 1.13.2
 
 ### Development Changes
